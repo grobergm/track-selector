@@ -27,8 +27,17 @@ $(document).ready(function(){
     } else if (answer==="back"){
       $('#secondModal').modal('show');
     }
-
   });
+
+  $("#phpButton").click(function(){
+    var answer= $("select#sizeQuest").val();
+    if (answer==="small"){
+      $("#phpCard").show();
+    } else if (answer==="big"){
+      $('#thirdModal').modal('show');
+    }
+  });
+
   $("form#trackForm").submit(function(event){
     event.preventDefault();
     var nameInput= $("input#userName").val();
