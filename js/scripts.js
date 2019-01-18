@@ -9,7 +9,7 @@ $(document).ready(function(){
     var frontScore = $("select#creative").val();
     console.log(frontScore);
     if (frontScore > 0){
-      $(".card#frontEndCard").show();
+      $(".card#frontEndCard").slideDown(2000);
     }
   })
 })
