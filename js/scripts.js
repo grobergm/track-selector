@@ -5,5 +5,11 @@ $(document).ready(function(){
     var name= $("#userName").val();
     $("#inputedName").text(name);
     $("#submitMessage").show();
+
+    var frontScore = $("select#creative").val();
+    console.log(frontScore);
+    if (frontScore > 0){
+      $(".card#frontEndCard").show();
+    }
   })
 })
