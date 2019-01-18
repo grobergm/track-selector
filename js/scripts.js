@@ -21,7 +21,13 @@ function trackSuggestor(design,size,platform,user){
 $(document).ready(function(){
 
   $("#designButton").click(function(){
-    $("#cssCard").show();
+    var answer= $("select#cssQuest").val();
+    if (answer==="front"){
+      $("#cssCard").show();
+    } else if (answer==="back"){
+      $('#secondModal').modal('show');
+    }
+
   });
   $("form#trackForm").submit(function(event){
     event.preventDefault();
