@@ -13,17 +13,38 @@
   <body>
     <div class="jumbotron">
       <h1>Welcome!</h1>
-      <h2>What Language Should you study at Epicodus?</h2>
-      <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#firstModal">
+      <h2>Which Programming Language Should You Choose at Epicodus?</h2>
+      <button id="startButton" type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#nameModal">
         Click here to find out!
       </button>
+    </div>
+    <!-- Name Modal Question -->
+    <div class="modal fade" id="nameModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">First of all, What is your Name?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <label for="userName">Enter your Name:</label>
+            <input id="userName" class="form-control" type="text">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button id="nameButton" type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- First Modal Question -->
     <div class="modal fade" id="firstModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="firstQuest">Front-End or Back-End?</h5>
+            <h5 class="modal-title" id="firstQuest"> Alright <span class="nameGoesHere"></span>, Front-End or Back-End?</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -39,7 +60,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button id="designButton" type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+            <button id="designButton" type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
           </div>
         </div>
       </div>
@@ -65,7 +86,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button id="phpButton" type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+            <button id="phpButton" type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
           </div>
         </div>
       </div>
@@ -90,7 +111,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button id="javaButton" type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+            <button id="javaButton" type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
           </div>
         </div>
       </div>
@@ -115,18 +136,15 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button id="cButton" type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+            <button id="cButton" type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
           </div>
         </div>
       </div>
     </div>
-
-
-      <h3 id="submitMessage">Ok <span id="inputedName"></span>, here is what we recommend:</h3>
       <div id="cssCard" class="card">
         <div class="card-body">
           <h1 class="card-title">CSS/Design</h1>
-          <p class="card-text">For those who are most interested in the front-end of a website, this track is for you!</p>
+          <p class="card-text"><span class="nameGoesHere"></span>, a career in front-end of a website is the track for you!</p>
           <a class="btn btn-primary btn-lg" href="https://css-tricks.com/">Learn More</a>
         </div>
       </div>

@@ -1,6 +1,16 @@
 
 $(document).ready(function(){
 
+  $("#startButton").click(function(){
+    $(".card").hide();
+  });
+
+  $("#nameButton").click(function(){
+    var name= $("input#userName").val();
+    $(".nameGoesHere").text(name);
+    $('#firstModal').modal('show');
+  })
+
   $("#designButton").click(function(){
     var answer= $("select#cssQuest").val();
     if (answer==="front"){
