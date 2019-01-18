@@ -1,5 +1,9 @@
 
-function trackSuggestor(design,user,platform,size){
+function trackSuggestor(design,size,platform,user){
+  console.log(design);
+  console.log(size);
+  console.log(platform);
+  console.log(user);
   if (design==="front"){
     return "css";
   } else {
@@ -9,7 +13,7 @@ function trackSuggestor(design,user,platform,size){
         return "java";
     } else {
         if (user==="buisiness"){
-          return "c#"
+          return "c"
         } else {
             return "ruby";
           }
@@ -27,7 +31,9 @@ $(document).ready(function(){
     var platformInput = $("select#platformQuest").val();
     var userInput = $("select#userQuest").val();
 
+    var result = trackSuggestor(designInput,sizeInput,platformInput,userInput);
     $("#inputedName").text(name);
     $("#submitMessage").show();
+    $(`#${result}Card`).slideDown(4000);
   })
 })
