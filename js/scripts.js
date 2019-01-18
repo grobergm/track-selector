@@ -1,23 +1,4 @@
 
-function trackSuggestor(design,size,platform,user){
-  if (design==="front"){
-    return "css";
-  } else {
-    if (size==="small"){
-      return "php";
-    } else if (platform==="mobile"){
-        return "java";
-    } else {
-        if (user==="buisiness"){
-          return "c"
-        } else {
-            return "ruby";
-          }
-      }
-  }
-}
-
-
 $(document).ready(function(){
 
   $("#designButton").click(function(){
@@ -38,18 +19,22 @@ $(document).ready(function(){
     }
   });
 
-  $("form#trackForm").submit(function(event){
-    event.preventDefault();
-    var nameInput= $("input#userName").val();
+  $("#javaButton").click(function(){
+    var answer= $("select#platformQuest").val();
+    if (answer==="mobile"){
+      $("#javaCard").show();
+    } else if (answer==="computer"){
+      $('#fourthModal').modal('show');
+    }
+  });
 
-    var designInput = $("select#cssQuest").val();
-    var sizeInput = $("select#sizeQuest").val();
-    var platformInput = $("select#platformQuest").val();
-    var userInput = $("select#userQuest").val();
+  $("#cButton").click(function(){
+    var answer= $("select#userQuest").val();
+    if (answer==="business"){
+      $("#cCard").show();
+    } else if (answer==="people"){
+      $("#rubyCard").show();
+    }
+  });
 
-    var result = trackSuggestor(designInput,sizeInput,platformInput,userInput);
-    $("#inputedName").text(name);
-    $("#submitMessage").show();
-    $(`#${result}Card`).slideDown(4000);
-  })
 })

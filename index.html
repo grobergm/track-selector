@@ -76,64 +76,52 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="secondQuest">What is the platform you want to work on?</h5>
+            <h5 class="modal-title" id="secondQuest">What sort of platform?</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <div class="form-group">
-              <p>Which would you prefer to make?</p>
-              <select id="sizeQuest" class="form-control">
-                <option value="small">A lot of small sites, where the client generates most of the content</option>
-                <option value="big">I want to work on larger projects, where my and my tech team have control over the site</option>
-              </select>
-            </div>
+            <p>What sort of platform do you want to work on?</p>
+            <select id="platformQuest" class="form-control">
+              <option value="mobile">Mobile Apps <em>Especially Android</em></option>
+              <option value="computer">Web Apps</option>
+            </select>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button id="phpButton" type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+            <button id="javaButton" type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <form id="trackForm">
-        <div class="form-group">
-          <label for="userName">What is your name?</label>
-          <input id="userName" class="form-control" type="text">
+    <!-- Fourth Modal Question -->
+    <div class="modal fade" id="fourthModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Buisiness Facing or User Facing?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Who do you want to use your site?</p>
+            <select id="userQuest" class="form-control">
+              <option value="business">Internal Buisiness Software</option>
+              <option value="people">Interactive Software for <em>all users</em></option>
+            </select>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button id="cButton" type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+          </div>
         </div>
-        <div class="form-group">
-          <p>Which describes you most?</p>
-          <select id="cssQuest" class="form-control">
-            <option value="front">I love Design! I want to make <strong>something beautiful!</strong></option>
-            <option value="back">Design is <em>not my thing...</em></option>
-          </select>
-        </div>
-        <div class="form-group">
-          <p>Lots of small projects,:</p>
-          <select id="sizeQuest" class="form-control">
-            <option value="small">A lot of small sites, where the client generates most of the content</option>
-            <option value="big">I want to work on larger projects, where my and my tech team have control over the site</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <p>What sort of platform do you want to work on?</p>
-          <select id="platformQuest" class="form-control">
-            <option value="mobile">Mobile Apps <em>Especially Android</em></option>
-            <option value="computer">I want to make websites for actual computers</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <p>Who do you want to use your Website?</p>
-          <select id="userQuest" class="form-control">
-            <option value="buisiness">I want to make something for a large buisiness</option>
-            <option value="people">I want to make something interactice, for <em>all users</em></option>
-          </select>
-        </div>
-        <button class="btn btn-primary btn-block" type="submit">Submit</button>
-      </form>
+      </div>
+    </div>
+
+
       <h3 id="submitMessage">Ok <span id="inputedName"></span>, here is what we recommend:</h3>
       <div id="cssCard" class="card">
         <div class="card-body">
