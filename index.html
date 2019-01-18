@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Track Selector</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <script
     src="https://code.jquery.com/jquery-3.3.1.js"
@@ -17,9 +17,12 @@
       <h2>What Language Should you study at Epicodus?</h2>
       <p>Answer the following questions, and we will make a suggestion for you!</p>
     </div>
-
-    <form class="" action="index.html" method="post">
-
+    <form id="trackForm">
+      <div class="form-group">
+        <label for="userName">What is your name?</label>
+        <input id="userName" class="form-control" type="text">
+      </div>
+      <button class="btn btn-primary btn-block" type="submit">Submit</button>
     </form>
     <div class="card">
       <img class="card-img-top" src="" alt="">
