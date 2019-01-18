@@ -1,6 +1,5 @@
 
 $(document).ready(function(){
-
   $("#startButton").click(function(){
     $(".card").hide();
   });
