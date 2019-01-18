@@ -1,9 +1,5 @@
 
 function trackSuggestor(design,size,platform,user){
-  console.log(design);
-  console.log(size);
-  console.log(platform);
-  console.log(user);
   if (design==="front"){
     return "css";
   } else {
