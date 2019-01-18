@@ -19,9 +19,14 @@ function trackSuggestor(design,size,platform,user){
 
 
 $(document).ready(function(){
+
+  $("#designButton").click(function(){
+    $("#cssCard").show();
+  });
   $("form#trackForm").submit(function(event){
     event.preventDefault();
     var nameInput= $("input#userName").val();
+
     var designInput = $("select#cssQuest").val();
     var sizeInput = $("select#sizeQuest").val();
     var platformInput = $("select#platformQuest").val();
