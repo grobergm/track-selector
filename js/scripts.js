@@ -6,8 +6,14 @@ $(document).ready(function(){
 
   $("#nameButton").click(function(){
     var name= $("input#userName").val();
-    $(".nameGoesHere").text(name);
-    $('#firstModal').modal('show');
+    if (!name){
+      $("input#userName").addClass("is-invalid")
+    }
+    if(name){
+      $(".nameGoesHere").text(name);
+      $('#nameModal').modal('hide');
+      $('#firstModal').modal('show');
+    }
   })
 
   $("#designButton").click(function(){

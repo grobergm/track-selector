@@ -15,7 +15,7 @@
       <h1>Welcome!</h1>
       <h2>Which Programming Language Should You Choose at Epicodus?</h2>
       <button id="startButton" type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#nameModal">
-        Click here to find out!
+      Click here to find out!
       </button>
     </div>
     <!-- Name Modal Question -->
@@ -31,10 +31,13 @@
           <div class="modal-body">
             <label for="userName">Enter your Name:</label>
             <input id="userName" class="form-control" type="text">
+            <div class="invalid-feedback">
+              Woah, there! Don't forget to enter your name!
+            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button id="nameButton" type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+            <button id="nameButton" type="button" class="btn btn-primary">Submit</button>
           </div>
         </div>
       </div>
@@ -44,7 +47,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="firstQuest"> Alright <span class="nameGoesHere"></span>, Front-End or Back-End?</h5>
+            <h5 class="modal-title" id="firstQuest">Alright <span class="nameGoesHere"></span>, Front-End or Back-End?</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -53,7 +56,7 @@
             <div class="form-group">
               <select id="cssQuest" class="form-control">
                 <option value="front">I want to make <strong>something beautiful!</strong></option>
-                <option value="back">I'm more interested back-end logic</option>
+                <option value="back">I'm more interested in  <strong>back-end</strong> logic.</option>
               </select>
             </div>
           </div>
@@ -69,7 +72,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="secondQuest">Content Management System?</h5>
+            <h5 class="modal-title" id="secondQuest">(2/5) Content Management System?</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -144,7 +147,7 @@
         <div class="card-body">
           <h1 class="card-title">CSS/Design</h1>
           <p class="card-text"><span class="nameGoesHere"></span>, a career in front-end of a website is the track for you! You don't want your work to be hidden in the shadows of the server-room. You will work with designers and User Experience professionals, and portfolio of dazzling sites in the end.</p>
-          <a class="btn btn-primary btn-lg" href="https://css-tricks.com/">Learn More</a>
+          <a class="btn btn-success btn-lg" href="https://css-tricks.com/">Learn More</a>
         </div>
       </div>
       <div id="phpCard" class="card">
@@ -158,21 +161,21 @@
         <div class="card-body">
           <h1 class="card-title">Java/Android</h1>
           <p class="card-text"><span class="nameGoesHere"></span>, You chose corretly! These days everybody has a smartphone, and you are a smart person, <span class="nameGoesHere"></span>! Now go make some native apps!</p>
-          <a class="btn btn-primary btn-lg" href="https://www.oracle.com/java/">Learn More</a>
+          <a class="btn btn-info btn-lg" href="https://www.oracle.com/java/">Learn More</a>
         </div>
       </div>
       <div id="cCard" class="card">
         <div class="card-body">
           <h1 class="card-title">C#/.NET</h1>
           <p class="card-text"> Ok, <span class="nameGoesHere"></span>, why are asembly level developers always soaking wet? <em>Because they work below C-level</em>! C# and .NET are a serious programming language, choose this track if you mean <strong>buisiness</strong>.</p>
-          <a class="btn btn-primary btn-lg" href="https://docs.microsoft.com/en-us/dotnet/csharp/">Learn More</a>
+          <a class="btn btn-secondary btn-lg" href="https://docs.microsoft.com/en-us/dotnet/csharp/">Learn More</a>
         </div>
       </div>
       <div id="rubyCard" class="card">
         <div class="card-body">
           <h1 class="card-title">Ruby/Rails</h1>
           <p class="card-text">Ruby and Rails are open source computing language designed to make modern web applications. You want to be a happy programmer, right <span class="nameGoesHere"></span>? Ride that Ruby train, and you'll be making interactive websites, that process user data with relative ease!</p>
-          <a class="btn btn-primary btn-lg" href="https://rubyonrails.org/">Learn More</a>
+          <a class="btn btn-danger btn-lg" href="https://rubyonrails.org/">Learn More</a>
         </div>
       </div>
     </div>
