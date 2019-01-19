@@ -5,3 +5,7 @@ body{
 .card {
   display:none;
 }
+
+.card-img-top{
+  width:300px;
+}
