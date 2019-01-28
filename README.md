@@ -24,7 +24,7 @@ No servers are required, since this is entirely a front-end based project.
 * _Bootstrap 4_
 * _jQuery_
 
-###Contact
+### Contact
 * If you have any questions, you can email me here:_grobergmg@gmail.com_
 ## Legal
 ###### MIT Copyright © 2019 Matt Groberg
