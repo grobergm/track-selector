@@ -16,38 +16,39 @@ $(document).ready(function(){
     }
   })
 
-  $("#designButton").click(function(){
-    var answer= $("select#cssQuest").val();
-    if (answer==="front"){
+  $("#designButton").click(
+    function(){
+    var ccsAnswer= $("select#cssQuest").val();
+    if (cssAnswer==="front"){
       $("#cssCard").show();
-    } else if (answer==="back"){
+    } else if (cssAnswer==="back"){
       $('#secondModal').modal('show');
     }
   });
 
   $("#phpButton").click(function(){
-    var answer= $("select#sizeQuest").val();
-    if (answer==="small"){
+    var phpAnswer= $("select#sizeQuest").val();
+    if (phpAnswer==="small"){
       $("#phpCard").show();
-    } else if (answer==="big"){
+    } else if (phpAnswer==="big"){
       $('#thirdModal').modal('show');
     }
   });
 
   $("#javaButton").click(function(){
-    var answer= $("select#platformQuest").val();
-    if (answer==="mobile"){
+    var javaAnswer= $("select#platformQuest").val();
+    if (javaAnswer==="mobile"){
       $("#javaCard").show();
-    } else if (answer==="computer"){
+    } else if (javaAnswer==="computer"){
       $('#fourthModal').modal('show');
     }
   });
 
   $("#cButton").click(function(){
-    var answer= $("select#userQuest").val();
-    if (answer==="business"){
+    var rubyAnswer= $("select#userQuest").val();
+    if (rubyAnswer==="business"){
       $("#cCard").show();
-    } else if (answer==="people"){
+    } else if (rubyAnswer==="people"){
       $("#rubyCard").show();
     }
   });
