@@ -5,21 +5,20 @@ $(document).ready(function(){
   });
 
   $("#nameButton").click(function(){
-    var name= $("input#userName").val();
-    if (!name){
+    var userName= $("input#userName").val();
+    if (!userName){
       $("input#userName").addClass("is-invalid")
     }
-    if(name){
-      $(".nameGoesHere").text(name);
+    if(userName){
+      $(".nameGoesHere").text(userName);
       $('#nameModal').modal('hide');
       $('#firstModal').modal('show');
     }
   })
 
-  $("#designButton").click(
-    function(){
-    var ccsAnswer= $("select#cssQuest").val();
-    if (cssAnswer==="front"){
+  $("#designButton").click(function(){
+    var cssAnswer = $("select#cssQuest").val();
+    if (cssAnswer === "front"){
       $("#cssCard").show();
     } else if (cssAnswer==="back"){
       $('#secondModal').modal('show');
